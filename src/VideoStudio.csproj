@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>VideoStudio</AssemblyName>
+    <RootNamespace>VideoStudio</RootNamespace>
+    <Version>1.1.1</Version>
+    <ApplicationIcon>Assets/video-studio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets/video-studio.ico" />
+    <Resource Include="Assets/video-studio.png" />
+    <Content Include="../vendor/tools/**" Link="tools/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../KULLANIM.md" Link="KULLANIM.md" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../YOUTUBE-YARDIM.md" Link="YOUTUBE-YARDIM.md" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../THIRD-PARTY.md" Link="THIRD-PARTY.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

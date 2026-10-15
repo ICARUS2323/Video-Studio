@@ -1,0 +1,31 @@
+**/bin/
+**/obj/
+vendor/
+release/
+artifacts/
+.dotnet/
+
+# Local settings, sessions and downloaded media
+**/data/
+**/sessions/
+cookies*.txt
+*.cookies.txt
+.env
+.env.*
+!.env.example
+*.log
+*.part
+*.ytdl
+*.mp4
+*.mp3
+*.webm
+*.m4a
+
+# IDE and machine-specific files
+.vs/
+.idea/
+*.user
+*.suo
+*.lnk
+Thumbs.db
+.DS_Store
